@@ -153,7 +153,7 @@ function informacionDeTuViaje (infoDestinoSeleccionado, infoFormaDePago, infoFec
  console.log(escursiones)
 
  const eleccionRealizada=escursiones.find(escursion=>escursion.id===escursionElegida)
-    console.log(eleccionRealizada)
+   alert(` ya tenes todo listo, diversion ampliada, ahora a disfrutar de ${eleccionRealizada.detalle}, una escursion que va a durar ${eleccionRealizada.tiempo}`)
        
  
 
