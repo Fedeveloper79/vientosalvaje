@@ -127,6 +127,8 @@ function informacionDeTuViaje (infoDestinoSeleccionado, infoFormaDePago, infoFec
 
  // escursiones
 
+ const escursionElegida = parseInt(prompt(`Ya definiste tu viaje, ahora amplia tu diversion y elegi entre las siguientes escursiones, .1 Cerro de los 7 colores, .2 Virgen del Cerro, .3 Purmamarca .4 Iruya`))
+
  class escursion {
     constructor(id, detalle, tiempo, costo){
     this.id=id
@@ -149,3 +151,10 @@ function informacionDeTuViaje (infoDestinoSeleccionado, infoFormaDePago, infoFec
  escursiones.push(iruya)
  
  console.log(escursiones)
+
+ const eleccionRealizada=escursiones.find(escursion=>escursion.id===escursionElegida)
+    console.log(eleccionRealizada)
+       
+ 
+
+ 
