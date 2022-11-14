@@ -123,3 +123,29 @@ function informacionDeTuViaje (infoDestinoSeleccionado, infoFormaDePago, infoFec
 }
 
  informacionDeTuViaje(infoDestinoSeleccionado, infoFormaDePago, infoFechaDeViaje)
+
+
+ // escursiones
+
+ class escursion {
+    constructor(id, detalle, tiempo, costo){
+    this.id=id
+    this.detalle=detalle
+    this.tiempo=tiempo
+    this.costo=costo
+    }
+ }
+
+ const escursiones = []
+
+
+ const cerro7Colores = new escursion (1, `cerro 7 colores`, `medio dia`, 4800)
+ escursiones.push(cerro7Colores)
+ const virgenDelCerro= new escursion(2, `Virgen del Cerro`, `dia entero`, 9500)
+ escursiones.push(virgenDelCerro)
+ const purmamarca=new escursion (3, `Purmamarca`, `medio dia`, 5220)
+ escursiones.push(purmamarca)
+ const iruya=new escursion(4, `Iruya`, `dia entero`, 14500)
+ escursiones.push(iruya)
+ 
+ console.log(escursiones)
