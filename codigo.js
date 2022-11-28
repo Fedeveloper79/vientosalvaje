@@ -7,9 +7,18 @@ const ingreso = document.getElementById(`ingreso`)
 botonIngresar.onclick= ()=>{
     localStorage.setItem(`nombre`,inputNombre.value)
     localStorage.setItem(`apellido`,inputApellido.value)
-    
+    console.log(localStorage.getItem(`password`))
+const nombreUsuario =localStorage.getItem(`nombre`)
+if(nombreUsuario){
+mensaje.innerText = `Bienvenido/a ${nombreUsuario} a Viento Salvaje, estas a un par de clicks del viaje de tu vida`
+ingreso.remove()
+}
    
 }
+
+
+
+
 
 
 class destino {
