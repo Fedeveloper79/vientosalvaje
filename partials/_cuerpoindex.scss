@@ -1,0 +1,33 @@
+.general {
+    background-image: url(../imagenes/portada/portadaSalta.jpg);
+
+    background-size: 1500px;
+}
+
+    #saludo {
+background-color: blanchedalmond;
+opacity: 50%;
+     
+    }
+h1 {
+    color: rgb(35, 4, 94);
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container {
+ 
+    height: 500px;
+    position: relative;
+
+}
+
+#ingreso {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+
+
+}

@@ -1,3 +1,17 @@
+const inputNombre = document.getElementById(`nombre`)
+const inputApellido = document.getElementById(`apellido`)
+const botonIngresar = document.getElementById(`ingresar`)
+const mensaje = document.getElementById(`mensaje`)
+const ingreso = document.getElementById(`ingreso`)
+
+botonIngresar.onclick= ()=>{
+    localStorage.setItem(`nombre`,inputNombre.value)
+    localStorage.setItem(`apellido`,inputApellido.value)
+    
+   
+}
+
+
 class destino {
     constructor(id, viaje, pago1, pago2, fecha1, fecha2, fecha3) {
         this.viaje = viaje
@@ -9,6 +23,7 @@ class destino {
         this.fecha3 = fecha3
     }
 }
+
 
 const Salta = new destino(1, `Salta`, 36000, 52000, `noviembre`, `enero`, `febrero`)
 const Jujuy = new destino(2, `Jujuy`, 42000, 60000, `noviembre`, `enero`, `febrero`)
