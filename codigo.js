@@ -1,20 +1,4 @@
-const inputNombre = document.getElementById(`nombre`)
-const inputApellido = document.getElementById(`apellido`)
-const botonIngresar = document.getElementById(`ingresar`)
-const mensaje = document.getElementById(`mensaje`)
-const ingreso = document.getElementById(`ingreso`)
 
-botonIngresar.onclick= ()=>{
-    localStorage.setItem(`nombre`,inputNombre.value)
-    localStorage.setItem(`apellido`,inputApellido.value)
-    console.log(localStorage.getItem(`password`))
-const nombreUsuario =localStorage.getItem(`nombre`)
-if(nombreUsuario){
-mensaje.innerText = `Bienvenido/a ${nombreUsuario} a Viento Salvaje, estas a un par de clicks del viaje de tu vida`
-ingreso.remove()
-}
-   
-}
 
 
 
@@ -178,7 +162,29 @@ function informacionDeTuViaje (infoDestinoSeleccionado, infoFormaDePago, infoFec
 
  const eleccionRealizada=escursiones.find(escursion=>escursion.id===escursionElegida)
     console.log(eleccionRealizada)
+
+const escursionesJson = JSON.stringify(escursiones)
+console.log(escursionesJson)
        
  
+// manipulando el DOM
+
+    const inputNombre = document.getElementById(`nombre`)
+    const inputApellido = document.getElementById(`apellido`)
+    const botonIngresar = document.getElementById(`ingresar`)
+    const mensaje = document.getElementById(`mensaje`)
+    const ingreso = document.getElementById(`ingreso`)
+    
+    botonIngresar.onclick= ()=>{
+        localStorage.setItem(`nombre`,inputNombre.value)
+        localStorage.setItem(`apellido`,inputApellido.value)
+        console.log(localStorage.getItem(`password`))
+    const nombreUsuario =localStorage.getItem(`nombre`)
+    if(nombreUsuario){
+    mensaje.innerText = `Bienvenido/a ${nombreUsuario} a Viento Salvaje, estas a un par de clicks del viaje de tu vida`
+    ingreso.remove()
+    }
+       
+    }
 
  
