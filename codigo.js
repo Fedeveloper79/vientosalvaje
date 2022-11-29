@@ -1,3 +1,4 @@
+
 class destino {
     constructor(id, viaje, pago1, pago2, fecha1, fecha2, fecha3) {
         this.viaje = viaje
