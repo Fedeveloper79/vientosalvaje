@@ -13,54 +13,89 @@
   <title>VIENTO SALVAJE</title>
 </head>
 
-<body class="general">
+<body id="general">
+
+
+
+
 
   <!-- Nav Bar-->
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-
-      <a class="navbar-brand" href="#">VIENTO SALVAJE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Viajes</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-  <!-- inicio de cuerpo y pagina de acceso-->
-<div id="saludo">
-  <h1 id="mensaje"> BIENVENIDOS A VIENTO SALVAJE, INGRESA CON TU NOMBRE Y APELLIDO Y VIVI EL VIAJE DE TU VIDA</h1>
-</div>
-    <div class="container" >
-      
-      <div id="ingreso">
-        <input type="text" name="Nombre" id="nombre" placeholder="Ingresa tu nombre">
-        <input type="text" name="Apellido" id="apellido" placeholder="Ingresa tu apellido">
-        <div id="entrar">
-          <button id="ingresar" >INGRESAR</button>
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <img class="logo" src="./imagenes/logo.png" alt="logo empresa">
+        <div class="d-flex flex-grow-1">
+          <span class="w-100 d-lg-none d-block"> </span>
+          <a href="#" class="navbar-brand">
+            <h1>VIENTO SALVAJE</h1>
+            <p class="subt">Viajar es vivir!!</p>
+          </a>
+          <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#minavbarboreal">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="minavbarboreal">
+          <ul class="navbar-nav ms-auto flex-nowrap">
+            <li class="nav-item">
+              <a href="#" class="nav-link "> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/obras.html" class="nav-link ">Excursiones</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/servicios.html" class="nav-link ">Galerias</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/clientes.html" class="nav-link ">Conocenos</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/contacto.html" class="nav-link ">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+  </div>
 
-   
-<script src="./codigo.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <!-- inicio de cuerpo y pagina de acceso-->
+  <div id="saludo">
+    <h1 id="mensaje"> BIENVENIDOS A VIENTO SALVAJE, INGRESA CON TU NOMBRE Y APELLIDO Y VIVI EL VIAJE DE TU VIDA</h1>
+  </div>
+  <div class="container">
+
+    <div id="ingreso">
+      <input type="text" name="Nombre" id="nombre" placeholder="Ingresa tu nombre">
+      <input type="text" name="Apellido" id="apellido" placeholder="Ingresa tu apellido">
+      <div id="entrar">
+        <button id="ingresar">INGRESAR</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="adentro"></div>
+
+
+
+
+
+  <script src="./codigo.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
