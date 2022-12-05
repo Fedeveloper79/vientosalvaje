@@ -127,38 +127,7 @@
 //  informacionDeTuViaje(infoDestinoSeleccionado, infoFormaDePago, infoFechaDeViaje)
 
 
-//  // escursiones
 
-//  const escursionElegida = parseInt(prompt(`Ya definiste tu viaje, ahora amplia tu diversion y elegi entre las siguientes escursiones, .1 Cerro de los 7 colores, .2 Virgen del Cerro, .3 Purmamarca .4 Iruya`))
-
-//  class escursion {
-//     constructor(id, detalle, tiempo, costo){
-//     this.id=id
-//     this.detalle=detalle
-//     this.tiempo=tiempo
-//     this.costo=costo
-//     }
-//  }
-
-//  const escursiones = []
-
-
-//  const cerro7Colores = new escursion (1, `cerro 7 colores`, `medio dia`, 4800)
-//  escursiones.push(cerro7Colores)
-//  const virgenDelCerro= new escursion(2, `Virgen del Cerro`, `dia entero`, 9500)
-//  escursiones.push(virgenDelCerro)
-//  const purmamarca=new escursion (3, `Purmamarca`, `medio dia`, 5220)
-//  escursiones.push(purmamarca)
-//  const iruya=new escursion(4, `Iruya`, `dia entero`, 14500)
-//  escursiones.push(iruya)
-
-//  console.log(escursiones)
-
-//  const eleccionRealizada=escursiones.find(escursion=>escursion.id===escursionElegida)
-//     console.log(eleccionRealizada)
-
-// const escursionesJson = JSON.stringify(escursiones)
-// console.log(escursionesJson)
 
 
 // manipulando el DOM
@@ -178,7 +147,7 @@ botonIngresar.onclick = () => {
     const nombreUsuario = localStorage.getItem(`nombre`)
     if (nombreUsuario) {
         mensaje.innerText = `Bienvenido/a ${nombreUsuario} a Viento Salvaje, estas a un par de clicks del viaje de tu vida`
-      
+      general.style.backgroundImage = 
          
         general.innerHTML = `  <div class="row">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -202,7 +171,7 @@ botonIngresar.onclick = () => {
                   <a href="#" class="nav-link "> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./pages/obras.html" class="nav-link ">Excursiones</a>
+                  <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
                 </li>
                 <li class="nav-item">
                   <a href="./pages/servicios.html" class="nav-link ">Galerias</a>

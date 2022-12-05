@@ -33,6 +33,11 @@ h1 {
   justify-content: space-around;
 }
 
+#excursiones {
+  display: flex;
+  justify-content: space-around;
+}
+
 .navbar {
   background-color: rgb(33, 97, 140);
   height: 120px;
