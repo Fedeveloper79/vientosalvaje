@@ -1,21 +1,28 @@
 
+// class destino {
+//     constructor(id, viaje, pago1, pago2, fecha1, fecha2, fecha3) {
+//         this.viaje = viaje
+//         this.id = id
+//         this.pago1 = pago1
+//         this.pago2 = pago2
+//         this.fecha1 = fecha1
+//         this.fecha2 = fecha2
+//         this.fecha3 = fecha3
+//     }
+// }
 
 
+// const Salta = new destino(1, `Salta`, 36000, 52000, `noviembre`, `enero`, `febrero`)
+// const Jujuy = new destino(2, `Jujuy`, 42000, 60000, `noviembre`, `enero`, `febrero`)
+// const catamarca = new destino(3, `Catamarca`, 48000, 270000, `noviembre`, `enero`, `febrero`)
 
+// console.log(Salta, Jujuy, catamarca)
 
+// let destinoSeleccionado = parseInt(prompt(`Elegi el destino de tus proximas vacaciones, te proponemos 1.Salta - 2.Jujuy - 3.Catamarca`))
 
+// let elijoDestino = false
 
-class destino {
-    constructor(id, viaje, pago1, pago2, fecha1, fecha2, fecha3) {
-        this.viaje = viaje
-        this.id = id
-        this.pago1 = pago1
-        this.pago2 = pago2
-        this.fecha1 = fecha1
-        this.fecha2 = fecha2
-        this.fecha3 = fecha3
-    }
-}
+// let infoDestinoSeleccionado
 
 // while (elijoDestino === false) {
 
@@ -120,24 +127,9 @@ class destino {
 //  informacionDeTuViaje(infoDestinoSeleccionado, infoFormaDePago, infoFechaDeViaje)
 
 
- const cerro7Colores = new escursion (1, `cerro 7 colores`, `medio dia`, 4800)
- escursiones.push(cerro7Colores)
- const virgenDelCerro= new escursion(2, `Virgen del Cerro`, `dia entero`, 9500)
- escursiones.push(virgenDelCerro)
- const purmamarca=new escursion (3, `Purmamarca`, `medio dia`, 5220)
- escursiones.push(purmamarca)
- const iruya=new escursion(4, `Iruya`, `dia entero`, 14500)
- escursiones.push(iruya)
- 
- console.log(escursiones)
 
- const eleccionRealizada=escursiones.find(escursion=>escursion.id===escursionElegida)
-    console.log(eleccionRealizada)
 
-const escursionesJson = JSON.stringify(escursiones)
-console.log(escursionesJson)
-       
- 
+
 // manipulando el DOM
 
 const inputNombre = document.getElementById(`nombre`)
@@ -195,7 +187,6 @@ botonIngresar.onclick = () => {
           </div>
         </nav>
       </div>
-
       <h1>BIENVENIDA/O ${nombreUsuario} ELEJI ENTRE ESTAS OPCIONES</h1>
         <div class="eleccion">
           <div class="card" style="width: 18rem;">
@@ -229,4 +220,3 @@ botonIngresar.onclick = () => {
     }
 
 }
-

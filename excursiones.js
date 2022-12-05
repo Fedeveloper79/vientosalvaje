@@ -1,4 +1,5 @@
 
+
 //escursiones
 
 let botonSeleccionar = document.getElementById(`seleccionarexcursion`)
@@ -31,7 +32,6 @@ function seleccionarExcursion() {
         const paseoelegido = purmamarca.detalle
         
         excursionElegida.innerHTML = `       
-
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
@@ -41,7 +41,6 @@ function seleccionarExcursion() {
         const paseoelegido = cerro7Colores.detalle
   
         excursionElegida.innerHTML = `       
-
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
@@ -51,18 +50,12 @@ function seleccionarExcursion() {
         const paseoelegido = hornocal.detalle
     
         excursionElegida.innerHTML = `       
-
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
             `
-    
-
     }
-
-    
 }
-
 
 
 
@@ -112,7 +105,4 @@ const nuevopaseo = paseoelegido
         
     }
 }
-
-
-
 
