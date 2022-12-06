@@ -19,18 +19,19 @@ function seleccionarExcursion() {
 
 
     if (inputiruya.checked) {
-        const paseoelegido = iruya.detalle
-     
+        const paseoelegido = iruya
+        const paseoelegidoJSON = JSON.stringify( paseoelegido )
+        localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
         
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
+        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
         `
 
     } else if (inputpurma.checked) {
         const paseoelegido = purmamarca.detalle
-        
+        localStorage.setItem(`paseo`, paseoelegido)
         excursionElegida.innerHTML = `       
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
@@ -39,7 +40,7 @@ function seleccionarExcursion() {
     }
     else if (inputmonta.checked) {
         const paseoelegido = cerro7Colores.detalle
-  
+        const paseoelegidoJSON = JSON.stringify(localStorage.setItem(`paseo`, paseoelegido));
         excursionElegida.innerHTML = `       
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
@@ -48,7 +49,7 @@ function seleccionarExcursion() {
     }
     else if (inputhorno.checked) {
         const paseoelegido = hornocal.detalle
-    
+        localStorage.setItem(`paseo`, paseoelegido)
         excursionElegida.innerHTML = `       
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
@@ -89,20 +90,21 @@ console.log(escursiones)
 //forma de pago
 
 
-let botonSeleccionarFormaDePago = document.getElementById(`botonseleccionarFormaDePago`)
-botonSeleccionarFormaDePago.addEventListener(`click`, seleccionarFormaDepago)
+// let botonSeleccionarFormaDePago = document.getElementById(`botonseleccionarFormaDePago`)
+// botonSeleccionarFormaDePago.addEventListener(`click`, seleccionarFormaDepago)
 
-function seleccionarFormaDepago  () {
-const inputContado = document.getElementById(`contado`)
-const inputfinanciado = document.getElementById(`cuotas`)
-const nuevopaseo = paseoelegido
+// function seleccionarFormaDepago() {
+//     const inputContado = document.getElementById(`contado`)
+//     const inputfinanciado = document.getElementById(`cuotas`)
+//    const nuevopaseo = JSON.parse(localStorage.getItem(`paseo`))
 
 
-    if (inputContado.checked){
-   
-      const  formaDePago = nuevopaseo.contado
-        alert(`el costo de tu paseo es ${formaDePago}`)
-        
-    }
-}
+//     if (inputContado.checked) {
+
+//         const formaDePago = nuevopaseo.contado
+//         alert(`el costo de tu paseo es ${formaDePago}`)
+//         console.log(formaDePago)
+//     }
+// }
+
 
