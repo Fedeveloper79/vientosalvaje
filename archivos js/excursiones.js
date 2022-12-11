@@ -34,7 +34,7 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
+        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
             `
@@ -44,7 +44,7 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
+        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
             `
@@ -54,7 +54,7 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
+        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
         <div>
         <a href="../pages/formaDePago.html">formas de pago</a></div>
             `
