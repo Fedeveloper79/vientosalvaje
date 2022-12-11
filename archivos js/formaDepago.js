@@ -12,28 +12,12 @@ botonSeleccionarFormaDePago.onclick = () => {
         alert(`el costo de tu paseo es ${formaDePago}`)
        
     }
-    else if (inputfinanciado.cheked){
+
+    else if (inputfinanciado.checked){
         const formaDePago = nuevopaseo.financiado
         alert(`el costo de tu paseo es ${formaDePago}`)
 
     }
 }
-
-
-
-// function seleccionarFormaDepago() {
-//     const inputContado = document.getElementById(`contado`)
-//     const inputfinanciado = document.getElementById(`cuotas`)
-//     const nuevopaseo = JSON.parse(localStorage.getItem(`paseo`))
-
-
-//     if (inputContado.checked) {
-
-//         const formaDePago = nuevopaseo.contado
-//         alert(`el costo de tu paseo es ${formaDePago}`)
-//         console.log(formaDePago)
-//     }
-// }
-
 
 
