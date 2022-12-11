@@ -69,9 +69,41 @@
   justify-content: space-around;
 }
 
+#generalPrueba {
+  background-image: url(../imagenes/fondos/Iruyaparafondo.jpeg);
+  background-size: 1500px;
+}
+
+.tirulo2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  font-size: 40px;
+}
+
+#boton3 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 200px;
+  font-size: 10px;
+}
+
+#generalMes {
+  background-image: url(../imagenes/fondos/Iruyaparafondo.jpeg);
+  background-size: 1500px;
+}
+
 #generalPago {
   background-image: url(../imagenes/fondos/-Jujuy-Province.jpg);
   background-size: 1500px;
+}
+
+#formaDePagoelegida {
+  background-color: rgb(116, 116, 141);
+  display: flex;
+  justify-content: center;
 }
 
 .eleccion {
@@ -86,6 +118,23 @@
 
 #titulo2 {
   color: black;
+}
+
+#generalExcursiones {
+  background-image: url(../imagenes/fondos/catamarcaRes.jpg);
+  background-size: 1500px;
+  height: 1000px;
+}
+
+#boton2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#tirulo3 {
+  background-color: black;
+  height: 50px;
+  margin: 20px;
 }
 
 .navbar {

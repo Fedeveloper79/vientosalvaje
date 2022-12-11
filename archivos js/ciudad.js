@@ -180,7 +180,7 @@ botonElegirCiudad.onclick = () => {
     <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
     <div>
     
-    <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
+    <button id="boton3"><a href="../pages/mes.html">Elegi el mes ideal</a></button>
 
   
     `

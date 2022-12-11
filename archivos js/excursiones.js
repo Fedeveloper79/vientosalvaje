@@ -23,20 +23,22 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
+        <div id="tirulo3">
+        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
+        </div>
         
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
-        <div>
-        <a href="../pages/formaDePago.html">formas de pago</a></div>
+     
         `
 
     } else if (inputpurma.checked) {
         const paseoelegido = purmamarca
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
-        excursionElegida.innerHTML = `       
-        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
-        <div>
-        <a href="../pages/formaDePago.html">formas de pago</a></div>
+        excursionElegida.innerHTML = ` 
+              
+        <div id="tirulo3">
+        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
+        </div>
             `
     }
     else if (inputmonta.checked) {
@@ -44,9 +46,9 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
-        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
-        <div>
-        <a href="../pages/formaDePago.html">formas de pago</a></div>
+        <div id="tirulo3">
+        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
+        </div>
             `
     }
     else if (inputhorno.checked) {
@@ -54,11 +56,13 @@ function seleccionarExcursion() {
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
         excursionElegida.innerHTML = `       
-        <h2 class="titulo2"> Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</h2>
-        <div>
-        <a href="../pages/formaDePago.html">formas de pago</a></div>
+        <div id="tirulo3">
+        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
+        </div>
             `
     }
+
+    
 }
 
 
