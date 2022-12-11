@@ -14,9 +14,9 @@ class destino {
 }
 
 
-const Salta = new destino(1, `Salta`, 36000, 52000, `noviembre`, `enero`, `febrero`)
-const Jujuy = new destino(2, `Jujuy`, 42000, 60000, `noviembre`, `enero`, `febrero`)
-const Catamarca = new destino(3, `Catamarca`, 48000, 270000, `noviembre`, `enero`, `febrero`)
+const Salta = new destino(1, `Salta`, 36000, 52000, `Noviembre`, `Diciembre`, `Enero`, )
+const Jujuy = new destino(2, `Jujuy`, 42000, 60000, `Noviembre`, `Diciembre`, `Enero`)
+const Catamarca = new destino(3, `Catamarca`, 48000, 270000, `Noviembre`, `Diciembre`, `Enero`)
 
 
 const botonElegirCiudad = document.getElementById(`botonElegirCiudad`)
@@ -75,38 +75,8 @@ botonElegirCiudad.onclick = () => {
   </div>
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
         <div>
-        
-        <div id="mes">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/noviembre.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Noviembre</h5>
-                <p class="card-text">Se nos va el 2022, aprovecha noviembre y viaja.</p>
-                <input type="radio" name="#" id="iruya">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/diciembre.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Diciembre</h5>
-                <p class="card-text">Termina el 2022 conociendo el Norte Argentino!.</p>
-                <input type="radio" name="#" id="purma">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/enero.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">ENERO</h5>
-                <p class="card-text">Arranca el año paseando!!.</p>
-                <input type="radio" name="#" id="enero">
-            </div>
-        </div>
+        <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
        
-    </div>
-
-    <button id="seleccionarMes" class="btn-primary">Seleccionar</button>
-
-    <div id="mesElegido">
         `
     }
 
@@ -157,38 +127,8 @@ botonElegirCiudad.onclick = () => {
 </div>
       <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
       <div>
-      
-      <div id="mes">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/noviembre.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Noviembre</h5>
-                <p class="card-text">Se nos va el 2022, aprovecha noviembre y viaja.</p>
-                <input type="radio" name="#" id="iruya">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/diciembre.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Diciembre</h5>
-                <p class="card-text">Termina el 2022 conociendo el Norte Argentino!.</p>
-                <input type="radio" name="#" id="purma">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/enero.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">ENERO</h5>
-                <p class="card-text">Arranca el año paseando!!.</p>
-                <input type="radio" name="#" id="enero">
-            </div>
-        </div>
-       
-    </div>
-
-    <button id="seleccionarMes" class="btn-primary">Seleccionar</button>
-
-    <div id="mesElegido">
+      <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
+     
       `
   }
 
@@ -240,37 +180,12 @@ botonElegirCiudad.onclick = () => {
     <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
     <div>
     
-    <div id="mes">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/noviembre.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Noviembre</h5>
-                <p class="card-text">Se nos va el 2022, aprovecha noviembre y viaja.</p>
-                <input type="radio" name="#" id="iruya">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/diciembre.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Diciembre</h5>
-                <p class="card-text">Termina el 2022 conociendo el Norte Argentino!.</p>
-                <input type="radio" name="#" id="purma">
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagenes/mes/enero.jfif" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">ENERO</h5>
-                <p class="card-text">Arranca el año paseando!!.</p>
-                <input type="radio" name="#" id="enero">
-            </div>
-        </div>
-       
-    </div>
+    <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
 
-    <button id="seleccionarMes" class="btn-primary">Seleccionar</button>
-
-    <div id="mesElegido">
+  
     `
 }
 }
+
+
+

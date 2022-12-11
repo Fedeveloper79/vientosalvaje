@@ -28,9 +28,14 @@ h1 {
   top: 150px;
 }
 
-#mes {
+#epoca {
   display: flex;
   justify-content: space-around;
+}
+
+#generalPago {
+  background-image: url(../imagenes/fondos/-Jujuy-Province.jpg);
+  background-size: 1500px;
 }
 
 .eleccion {
