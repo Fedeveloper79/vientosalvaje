@@ -171,7 +171,7 @@ botonIngresar.onclick = () => {
                   <a href="#" class="nav-link "> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
+                  <a href="./pages/excursiones.html" class="nav-link ">Excursiones</a>
                 </li>
                 <li class="nav-item">
                   <a href="./pages/servicios.html" class="nav-link ">Galerias</a>
