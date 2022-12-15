@@ -22,46 +22,36 @@ function seleccionarExcursion() {
         const paseoelegido = iruya
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
-        excursionElegida.innerHTML = `       
-        <div id="tirulo3">
-        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
-        </div>
-        
-     
-        `
+        const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
 
     } else if (inputpurma.checked) {
         const paseoelegido = purmamarca
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
-        excursionElegida.innerHTML = ` 
-              
-        <div id="tirulo3">
-        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
-        </div>
-            `
+        const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
     }
     else if (inputmonta.checked) {
         const paseoelegido = cerro7Colores
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
-        excursionElegida.innerHTML = `       
-        <div id="tirulo3">
-        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
-        </div>
-            `
+        const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
     }
     else if (inputhorno.checked) {
         const paseoelegido = hornocal
         const paseoelegidoJSON = JSON.stringify( paseoelegido )
         localStorage.setItem(`paseo`, paseoelegidoJSON)
-        excursionElegida.innerHTML = `       
-        <div id="tirulo3">
-        <h2 class="tirulo3"> <a href="../pages/formaDePago.html">Excelente eleccion, nos vamos a ${paseoelegido.detalle}, ahora eleji la forma de pago de tu viaje</a></h2>
-        </div>
-            `
+        const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
     }
 
+    const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
+    Swal.fire({
+        title: ` Excelente eleccion, nos vamos a ${paseoElegido2.detalle}, ahora eleji la forma de pago de tu viaje`,
+        text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
+        icon: 'success',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        footer: `<a class="btn btn-primary" href="../pages/formaDePago.html">Elegi la forma de pago mas conveniente para vos</a>`
+      });
     
 }
 
