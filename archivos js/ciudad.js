@@ -26,6 +26,7 @@ const inputJujuy = document.getElementById(`jujuy`)
 const inputCatamarca = document.getElementById(`catamarca`)
 const generalPrueba = document.getElementById(`generalPrueba`)
 
+
 botonElegirCiudad.onclick = () => {
 
      if (inputSalta.checked) {
@@ -33,51 +34,15 @@ botonElegirCiudad.onclick = () => {
         const ciudadElegidaJSON = JSON.stringify(ciudadElegida)
         localStorage.setItem(`ciudad`, ciudadElegidaJSON)
         const nuevaCiudad = JSON.parse(localStorage.getItem(`ciudad`))
-        generalPrueba.innerHTML = `       
+        Swal.fire({
+          title: `Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo!!`,
+          text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
+          icon: 'success',
+          showConfirmButton: false,
+          allowOutsideClick: false,
+          footer:`<a class="btn btn-primary" href="../pages/mes.html">OK</a>`
+        });
     
-    <div class="row">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <img class="logo" src="../imagenes/logo.png" alt="logo empresa">
-        <div class="d-flex flex-grow-1">
-          <span class="w-100 d-lg-none d-block"> </span>
-          <a href="#" class="navbar-brand">
-            <h1>VIENTO SALVAJE</h1>
-            <p class="subt">Viajar es vivir!!</p>
-          </a>
-          <div class="w-100 text-right">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#minavbarboreal">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="minavbarboreal">
-          <ul class="navbar-nav ms-auto flex-nowrap">
-            <li class="nav-item">
-              <a href="../index.html" class="nav-link "> Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
-            </li>
-            <li class="nav-item">
-              <a href="../pages/servicios.html" class="nav-link ">Galerias</a>
-            </li>
-            <li class="nav-item">
-              <a href="../pages/clientes.html" class="nav-link ">Conocenos</a>
-            </li>
-            <li class="nav-item">
-              <a href="./pages/contacto.html" class="nav-link ">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-        <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
-        <div>
-        <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
-       
-        `
     }
 
     else if (inputJujuy.checked) {
@@ -85,51 +50,15 @@ botonElegirCiudad.onclick = () => {
       const ciudadElegidaJSON = JSON.stringify(ciudadElegida)
       localStorage.setItem(`ciudad`, ciudadElegidaJSON)
       const nuevaCiudad = JSON.parse(localStorage.getItem(`ciudad`))
-      generalPrueba.innerHTML = `       
+      Swal.fire({
+        title: `Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo!!`,
+        text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
+        icon: 'success',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        footer:`<a class="btn btn-primary" href="../pages/mes.html">OK</a>`
+      });
   
-  <div class="row">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <img class="logo" src="../imagenes/logo.png" alt="logo empresa">
-      <div class="d-flex flex-grow-1">
-        <span class="w-100 d-lg-none d-block"> </span>
-        <a href="#" class="navbar-brand">
-          <h1>VIENTO SALVAJE</h1>
-          <p class="subt">Viajar es vivir!!</p>
-        </a>
-        <div class="w-100 text-right">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#minavbarboreal">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse flex-grow-1 text-right" id="minavbarboreal">
-        <ul class="navbar-nav ms-auto flex-nowrap">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link "> Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
-          </li>
-          <li class="nav-item">
-            <a href="../pages/servicios.html" class="nav-link ">Galerias</a>
-          </li>
-          <li class="nav-item">
-            <a href="../pages/clientes.html" class="nav-link ">Conocenos</a>
-          </li>
-          <li class="nav-item">
-            <a href="./pages/contacto.html" class="nav-link ">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-      <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
-      <div>
-      <button><a href="../pages/mes.html">Elegi el mes ideal</a></button>
-     
-      `
   }
 
   else if (inputCatamarca.checked) {
@@ -137,53 +66,23 @@ botonElegirCiudad.onclick = () => {
     const ciudadElegidaJSON = JSON.stringify(ciudadElegida)
     localStorage.setItem(`ciudad`, ciudadElegidaJSON)
     const nuevaCiudad = JSON.parse(localStorage.getItem(`ciudad`))
-    generalPrueba.innerHTML = `       
 
-<div class="row">
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <img class="logo" src="../imagenes/logo.png" alt="logo empresa">
-    <div class="d-flex flex-grow-1">
-      <span class="w-100 d-lg-none d-block"> </span>
-      <a href="#" class="navbar-brand">
-        <h1>VIENTO SALVAJE</h1>
-        <p class="subt">Viajar es vivir!!</p>
-      </a>
-      <div class="w-100 text-right">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#minavbarboreal">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="minavbarboreal">
-      <ul class="navbar-nav ms-auto flex-nowrap">
-        <li class="nav-item">
-          <a href="../index.html" class="nav-link "> Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
-        </li>
-        <li class="nav-item">
-          <a href="../pages/servicios.html" class="nav-link ">Galerias</a>
-        </li>
-        <li class="nav-item">
-          <a href="../pages/clientes.html" class="nav-link ">Conocenos</a>
-        </li>
-        <li class="nav-item">
-          <a href="./pages/contacto.html" class="nav-link ">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
-    <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo</h2>
-    <div>
+
+    Swal.fire({
+      title: `Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ahora eleji el mes de tu paseo!!`,
+      text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
+      icon: 'success',
+     
+      showConfirmButton: false,
+      allowOutsideClick: false,
+      footer:`<a class="btn btn-primary" href="../pages/mes.html">OK</a>`
+    });
+
+
+
     
-    <button id="boton3"><a href="../pages/mes.html">Elegi el mes ideal</a></button>
-
   
-    `
+    
 }
 }
 

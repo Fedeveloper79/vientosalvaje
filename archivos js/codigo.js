@@ -12,11 +12,16 @@ const general = document.getElementById(`general`)
 const saludo = document.getElementById(`saludo`)
 
 botonIngresar.onclick = () => {
+
   localStorage.setItem(`nombre`, inputNombre.value)
   localStorage.setItem(`apellido`, inputApellido.value)
   console.log(localStorage.getItem(`password`))
   const nombreUsuario = localStorage.getItem(`nombre`)
   if (nombreUsuario) {
+    (ingreso).remove(),
+    (saludo).remove(),
+    (botonIngresar).remove(),
+   
 
 Swal.fire({
   title: `BIENVENIDA/O  ${nombreUsuario} ELEJI ENTRE ESTAS OPCIONES!!`,
@@ -28,15 +33,6 @@ Swal.fire({
 });
 
 
-    // swal.fire({
-    //   title: `BIENVENIDA/O ${nombreUsuario} ELEJI ENTRE ESTAS OPCIONES`,
-    //   text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
-    //   confirmButtonText: 'VAMOSSSS',
-     
-    // })
-
-
-    //<button id="botonElegirDestino" class="btn-primary"><a id="aaa"href="./pages/ciudad.html"> Elegir Destino</a></button>
 
   }
 }
