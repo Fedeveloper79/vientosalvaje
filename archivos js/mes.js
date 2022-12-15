@@ -61,7 +61,7 @@ botonSeleccionarMes.onclick = () => {
               <a href="../index.html" class="nav-link "> Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="../pages/excursiones.html" class="nav-link ">Excursiones</a>
+              <a href="../pages/paseos.html" class="nav-link ">Excursiones</a>
             </li>
             <li class="nav-item">
               <a href="../pages/servicios.html" class="nav-link ">Galerias</a>
@@ -79,6 +79,6 @@ botonSeleccionarMes.onclick = () => {
   </div>
         <h2 class="tirulo2"> Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, Ademas elegiste el mejor mes, nos vamos en ${nuevomes}</h2>
         <div>
-        <button><a href="../pages/excursiones.html">Sumale diversion a tu viaje</a></button>
+        <button><a href="../pages/paseos.html">Sumale diversion a tu viaje</a></button>
     `
 }
