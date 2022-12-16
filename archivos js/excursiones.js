@@ -1,5 +1,4 @@
 
-
 //escursiones
 
 let botonSeleccionar = document.getElementById(`seleccionarexcursion`)
@@ -45,8 +44,8 @@ function seleccionarExcursion() {
 
     const paseoElegido2 = JSON.parse(localStorage.getItem(`paseo`))
     Swal.fire({
-        title: ` Excelente eleccion, nos vamos a ${paseoElegido2.detalle}, ahora eleji la forma de pago de tu viaje`,
-        text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
+        title: ` Elegiste ${paseoElegido2.detalle}, El costo de tu excursion es $${paseoElegido2.precio}`,
+        text: `YA CASI ESTAS VIAJANDO! SOLO UN PASO MAS, ELEGI LA FORMA DE PAGO`,
         icon: 'success',
         showConfirmButton: false,
         allowOutsideClick: false,
@@ -63,22 +62,21 @@ class escursion {
         this.id = id
         this.detalle = detalle
         this.tiempo = tiempo
-        this.contado = contado
-        this.financiado = financiado
+        this.precio = contado
+        
     }
 }
 
 const escursiones = []
 
 
-const cerro7Colores = new escursion(1, `cerro 7 colores`, `medio dia`, 4800, 7500)
+const cerro7Colores = new escursion(1, `cerro 7 colores`, `medio dia`, 4800, )
 escursiones.push(cerro7Colores)
-const hornocal = new escursion(2, `Hornocal`, `dia entero`, 9500, 14500)
+const hornocal = new escursion(2, `Hornocal`, `dia entero`, 9500, )
 escursiones.push(hornocal)
-const purmamarca = new escursion(3, `Purmamarca`, `medio dia`, 5220, 8300)
+const purmamarca = new escursion(3, `Purmamarca`, `medio dia`, 5220, )
 escursiones.push(purmamarca)
-const iruya = new escursion(4, `Iruya`, `dia entero`, 14500, 18600
-)
+const iruya = new escursion(4, `Iruya`, `dia entero`, 14500, )
 escursiones.push(iruya)
 
 console.log(escursiones)

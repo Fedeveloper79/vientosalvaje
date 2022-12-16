@@ -56,6 +56,7 @@ botonElegirCiudad.onclick = () => {
 
 
   }
+  const nuevaCiudad = JSON.parse(localStorage.getItem(`ciudad`))
   Swal.fire({
     title: `Excelente eleccion, nos vamos a ${nuevaCiudad.viaje}, el costo de tu viaje es de $${nuevaCiudad.pago1} Ahora eleji el mes de tu paseo!!`,
     text: `ESTAS A UN PAR DE CLICKS DEL VIAJE DE TUS SUEÑOS, VAMOS A ELEGIR EL DESTINO`,
